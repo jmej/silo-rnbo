@@ -10,11 +10,42 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 76.0, 1853.0, 923.0 ],
+		"rect" : [ 34.0, 76.0, 1467.0, 923.0 ],
 		"gridsize" : [ 15.0, 15.0 ],
 		"boxes" : [ 			{
 				"box" : 				{
-					"attr" : "poly/grain/speed",
+					"fontname" : "Lato",
+					"id" : "obj-14",
+					"maxclass" : "live.dial",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "float" ],
+					"parameter_enable" : 1,
+					"patching_rect" : [ 564.0, 219.0, 27.0, 48.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 366.838084270043737, 392.0, 51.0, 48.0 ],
+					"saved_attribute_attributes" : 					{
+						"valueof" : 						{
+							"parameter_initial" : [ 0 ],
+							"parameter_initial_enable" : 1,
+							"parameter_linknames" : 1,
+							"parameter_longname" : "tune[3]",
+							"parameter_mmax" : 1.0,
+							"parameter_modmode" : 0,
+							"parameter_shortname" : "tune",
+							"parameter_type" : 0,
+							"parameter_unitstyle" : 1
+						}
+
+					}
+,
+					"varname" : "tune[3]"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"attr" : "grain/speed",
 					"id" : "obj-39",
 					"maxclass" : "attrui",
 					"numinlets" : 1,
@@ -674,30 +705,6 @@
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-45",
-					"maxclass" : "button",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "bang" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 755.0, 70.0, 24.0, 24.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-43",
-					"maxclass" : "newobj",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "float" ],
-					"patching_rect" : [ 672.0, 259.0, 46.0, 22.0 ],
-					"text" : "f 261.3"
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"fontname" : "Lato",
 					"id" : "obj-42",
 					"maxclass" : "live.dial",
@@ -730,143 +737,7 @@
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-41",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 584.0, 220.0, 34.0, 22.0 ],
-					"text" : "ftom"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-36",
-					"maxclass" : "newobj",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "float" ],
-					"patching_rect" : [ 573.5, 255.0, 30.0, 22.0 ],
-					"text" : "f 60"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontname" : "Lato",
-					"fontsize" : 10.0,
-					"id" : "obj-35",
-					"maxclass" : "live.text",
-					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "" ],
-					"parameter_enable" : 1,
-					"patching_rect" : [ 683.0, 47.0, 44.0, 15.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 441.625, 337.25, 44.0, 15.0 ],
-					"saved_attribute_attributes" : 					{
-						"valueof" : 						{
-							"parameter_enum" : [ "val1", "val2" ],
-							"parameter_longname" : "live.text",
-							"parameter_mmax" : 1,
-							"parameter_modmode" : 0,
-							"parameter_shortname" : "live.text",
-							"parameter_type" : 2
-						}
-
-					}
-,
-					"text" : "Note",
-					"texton" : "Freq",
-					"varname" : "live.text"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-32",
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 683.0, 104.0, 62.0, 22.0 ],
-					"text" : "hidden $1"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-29",
-					"maxclass" : "newobj",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "int" ],
-					"patching_rect" : [ 615.0, 70.0, 29.5, 22.0 ],
-					"text" : "!= 1"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-28",
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 615.0, 104.0, 62.0, 22.0 ],
-					"text" : "hidden $1"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-14",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 683.0, 220.0, 34.0, 22.0 ],
-					"text" : "mtof"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"appearance" : 3,
-					"fontname" : "Lato",
-					"fontsize" : 12.0,
-					"id" : "obj-12",
-					"maxclass" : "live.dial",
-					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "float" ],
-					"parameter_enable" : 1,
-					"patching_rect" : [ 683.0, 143.0, 64.0, 69.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 432.125, 265.0, 64.0, 69.0 ],
-					"saved_attribute_attributes" : 					{
-						"valueof" : 						{
-							"parameter_initial" : [ 60 ],
-							"parameter_initial_enable" : 1,
-							"parameter_linknames" : 1,
-							"parameter_longname" : "basenote",
-							"parameter_mmin" : 1.0,
-							"parameter_modmode" : 0,
-							"parameter_shortname" : "Base",
-							"parameter_type" : 0,
-							"parameter_unitstyle" : 8
-						}
-
-					}
-,
-					"varname" : "basenote"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"attr" : "poly/grain/granular/starttime",
+					"attr" : "grain/granular/starttime",
 					"id" : "obj-11",
 					"maxclass" : "attrui",
 					"numinlets" : 1,
@@ -880,7 +751,7 @@
 			}
 , 			{
 				"box" : 				{
-					"attr" : "poly/grain/granular/panpos",
+					"attr" : "grain/granular/panpos",
 					"id" : "obj-7",
 					"maxclass" : "attrui",
 					"numinlets" : 1,
@@ -894,7 +765,7 @@
 			}
 , 			{
 				"box" : 				{
-					"attr" : "poly/grain/granular/grainlength",
+					"attr" : "grain/granular/grainlength",
 					"id" : "obj-5",
 					"maxclass" : "attrui",
 					"numinlets" : 1,
@@ -908,7 +779,7 @@
 			}
 , 			{
 				"box" : 				{
-					"attr" : "poly/grain/granular/basefreq",
+					"attr" : "grain/granular/basefreq",
 					"id" : "obj-4",
 					"maxclass" : "attrui",
 					"numinlets" : 1,
@@ -917,42 +788,6 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 564.0, 296.0, 194.0, 22.0 ],
 					"text_width" : 144.0
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"appearance" : 3,
-					"fontname" : "Lato",
-					"fontsize" : 12.0,
-					"hidden" : 1,
-					"id" : "obj-23",
-					"maxclass" : "live.dial",
-					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "float" ],
-					"parameter_enable" : 1,
-					"patching_rect" : [ 584.0, 132.0, 64.0, 69.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 432.125, 265.0, 64.0, 69.0 ],
-					"saved_attribute_attributes" : 					{
-						"valueof" : 						{
-							"parameter_exponent" : 6.0,
-							"parameter_initial" : [ 261.629999999999995 ],
-							"parameter_initial_enable" : 1,
-							"parameter_linknames" : 1,
-							"parameter_longname" : "basefreq",
-							"parameter_mmax" : 12543.0,
-							"parameter_mmin" : 20.0,
-							"parameter_modmode" : 0,
-							"parameter_shortname" : "Base",
-							"parameter_type" : 0,
-							"parameter_unitstyle" : 3
-						}
-
-					}
-,
-					"varname" : "basefreq"
 				}
 
 			}
@@ -1102,7 +937,7 @@
 ,
 					"maxclass" : "newobj",
 					"numinlets" : 2,
-					"numoutlets" : 4,
+					"numoutlets" : 3,
 					"outletInfo" : 					{
 						"IOInfo" : [ 							{
 								"type" : "signal",
@@ -1116,95 +951,89 @@
 								"tag" : "out2",
 								"comment" : ""
 							}
-, 							{
-								"type" : "midi",
-								"index" : -1,
-								"tag" : "",
-								"comment" : ""
-							}
  ]
 					}
 ,
-					"outlettype" : [ "signal", "signal", "int", "list" ],
+					"outlettype" : [ "signal", "signal", "list" ],
 					"patching_rect" : [ 73.0, 428.5, 229.0, 29.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 2,
 					"presentation_rect" : [ 271.939597315436231, 441.5, 175.0, 50.0 ],
 					"rnboattrcache" : 					{
-						"poly/grain/randomtrigger" : 						{
-							"label" : "randomtrigger",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"poly/env.adsr/attack" : 						{
-							"label" : "attack",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
 						"spread" : 						{
 							"label" : "spread",
 							"isEnum" : 0,
 							"parsestring" : ""
 						}
 ,
-						"poly/env.adsr/sustain" : 						{
-							"label" : "sustain",
+						"record" : 						{
+							"label" : "record",
 							"isEnum" : 0,
 							"parsestring" : ""
 						}
 ,
-						"poly/env.adsr/release" : 						{
-							"label" : "release",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"poly/grain/granular/panpos" : 						{
-							"label" : "panpos",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"poly/grain/speed" : 						{
+						"grain/speed" : 						{
 							"label" : "speed",
 							"isEnum" : 0,
 							"parsestring" : ""
 						}
 ,
-						"poly/grain/granular/starttime" : 						{
+						"grain/randomtrigger" : 						{
+							"label" : "randomtrigger",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"grain/granular/starttime" : 						{
 							"label" : "starttime",
 							"isEnum" : 0,
 							"parsestring" : ""
 						}
 ,
-						"poly/env.adsr/decay" : 						{
-							"label" : "decay",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"poly/grain/granular/basefreq" : 						{
-							"label" : "basefreq",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"poly/grain/granular/grainlength" : 						{
+						"grain/granular/grainlength" : 						{
 							"label" : "grainlength",
 							"isEnum" : 0,
 							"parsestring" : ""
 						}
 ,
-						"poly/grain/granular/buffchan" : 						{
+						"grain/granular/buffchan" : 						{
 							"label" : "buffchan",
 							"isEnum" : 0,
 							"parsestring" : ""
 						}
 ,
-						"record" : 						{
-							"label" : "record",
+						"grain/granular/panpos" : 						{
+							"label" : "panpos",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"grain/granular/basefreq" : 						{
+							"label" : "basefreq",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"env.adsr/attack" : 						{
+							"label" : "attack",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"env.adsr/decay" : 						{
+							"label" : "decay",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"env.adsr/sustain" : 						{
+							"label" : "sustain",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"env.adsr/release" : 						{
+							"label" : "release",
 							"isEnum" : 0,
 							"parsestring" : ""
 						}
@@ -1226,7 +1055,6 @@
 					"saved_object_attributes" : 					{
 						"optimization" : "O1",
 						"parameter_enable" : 1,
-						"polyphony" : 4,
 						"uuid" : "9ee37473-ba62-11eb-b473-a683e7612c99"
 					}
 ,
@@ -1250,1479 +1078,194 @@
 							}
 ,
 							"__sps" : 							{
-								"poly" : [ 									{
+								"env.adsr" : 								{
+									"attack" : 									{
+										"value" : 30.0
+									}
+,
+									"decay" : 									{
+										"value" : 200.0
+									}
+,
+									"sustain" : 									{
+										"value" : 0.5
+									}
+,
+									"release" : 									{
+										"value" : 300.0
+									}
+
+								}
+,
+								"grain" : [ 									{
+										"speed" : 										{
+											"value" : 0.1
+										}
+,
+										"randomtrigger" : 										{
+											"value" : 0.0
+										}
+,
 										"__sps" : 										{
-											"env.adsr" : 											{
-												"attack" : 												{
-													"value" : 36.734523863959005
+											"granular" : 											{
+												"panpos" : 												{
+													"value" : 0.5
 												}
 ,
-												"decay" : 												{
-													"value" : 30.0
+												"starttime" : 												{
+													"value" : 0.0
 												}
 ,
-												"sustain" : 												{
-													"value" : 0.578740157480315
+												"basefreq" : 												{
+													"value" : 0.0
 												}
 ,
-												"release" : 												{
-													"value" : 427.368439356016665
+												"grainlength" : 												{
+													"value" : 1.0
+												}
+,
+												"buffchan" : 												{
+													"value" : 0.0
+												}
+,
+												"__sps" : 												{
+													"retrigger-logic" : 													{
+
+													}
+
 												}
 
 											}
-,
-											"grain" : [ 												{
-													"speed" : 													{
-														"value" : 0.559055118110237
-													}
-,
-													"randomtrigger" : 													{
-														"value" : 0.0
-													}
-,
-													"__sps" : 													{
-														"granular" : 														{
-															"grainlength" : 															{
-																"value" : 0.220472440944882
-															}
-,
-															"basefreq" : 															{
-																"value" : 261.625565410470642
-															}
-,
-															"panpos" : 															{
-																"value" : 0.52
-															}
-,
-															"starttime" : 															{
-																"value" : 0.275590551181102
-															}
-,
-															"buffchan" : 															{
-																"value" : 0.0
-															}
-,
-															"__sps" : 															{
-																"retrigger-logic" : 																{
 
-																}
-
-															}
-
-														}
-
-													}
-
-												}
-, 												{
-													"speed" : 													{
-														"value" : 0.559055118110237
-													}
-,
-													"randomtrigger" : 													{
-														"value" : 0.0
-													}
-,
-													"__sps" : 													{
-														"granular" : 														{
-															"grainlength" : 															{
-																"value" : 0.220472440944882
-															}
-,
-															"basefreq" : 															{
-																"value" : 261.625565410470642
-															}
-,
-															"panpos" : 															{
-																"value" : 0.52
-															}
-,
-															"starttime" : 															{
-																"value" : 0.275590551181102
-															}
-,
-															"buffchan" : 															{
-																"value" : 0.0
-															}
-,
-															"__sps" : 															{
-																"retrigger-logic" : 																{
-
-																}
-
-															}
-
-														}
-
-													}
-
-												}
-, 												{
-													"speed" : 													{
-														"value" : 0.559055118110237
-													}
-,
-													"randomtrigger" : 													{
-														"value" : 0.0
-													}
-,
-													"__sps" : 													{
-														"granular" : 														{
-															"grainlength" : 															{
-																"value" : 0.220472440944882
-															}
-,
-															"basefreq" : 															{
-																"value" : 261.625565410470642
-															}
-,
-															"panpos" : 															{
-																"value" : 0.52
-															}
-,
-															"starttime" : 															{
-																"value" : 0.275590551181102
-															}
-,
-															"buffchan" : 															{
-																"value" : 0.0
-															}
-,
-															"__sps" : 															{
-																"retrigger-logic" : 																{
-
-																}
-
-															}
-
-														}
-
-													}
-
-												}
-, 												{
-													"speed" : 													{
-														"value" : 0.559055118110237
-													}
-,
-													"randomtrigger" : 													{
-														"value" : 0.0
-													}
-,
-													"__sps" : 													{
-														"granular" : 														{
-															"grainlength" : 															{
-																"value" : 0.220472440944882
-															}
-,
-															"basefreq" : 															{
-																"value" : 261.625565410470642
-															}
-,
-															"panpos" : 															{
-																"value" : 0.52
-															}
-,
-															"starttime" : 															{
-																"value" : 0.275590551181102
-															}
-,
-															"buffchan" : 															{
-																"value" : 0.0
-															}
-,
-															"__sps" : 															{
-																"retrigger-logic" : 																{
-
-																}
-
-															}
-
-														}
-
-													}
-
-												}
-, 												{
-													"speed" : 													{
-														"value" : 0.559055118110237
-													}
-,
-													"randomtrigger" : 													{
-														"value" : 0.0
-													}
-,
-													"__sps" : 													{
-														"granular" : 														{
-															"grainlength" : 															{
-																"value" : 0.220472440944882
-															}
-,
-															"basefreq" : 															{
-																"value" : 261.625565410470642
-															}
-,
-															"panpos" : 															{
-																"value" : 0.52
-															}
-,
-															"starttime" : 															{
-																"value" : 0.275590551181102
-															}
-,
-															"buffchan" : 															{
-																"value" : 0.0
-															}
-,
-															"__sps" : 															{
-																"retrigger-logic" : 																{
-
-																}
-
-															}
-
-														}
-
-													}
-
-												}
-, 												{
-													"speed" : 													{
-														"value" : 0.559055118110237
-													}
-,
-													"randomtrigger" : 													{
-														"value" : 0.0
-													}
-,
-													"__sps" : 													{
-														"granular" : 														{
-															"grainlength" : 															{
-																"value" : 0.220472440944882
-															}
-,
-															"basefreq" : 															{
-																"value" : 261.625565410470642
-															}
-,
-															"panpos" : 															{
-																"value" : 0.52
-															}
-,
-															"starttime" : 															{
-																"value" : 0.275590551181102
-															}
-,
-															"buffchan" : 															{
-																"value" : 0.0
-															}
-,
-															"__sps" : 															{
-																"retrigger-logic" : 																{
-
-																}
-
-															}
-
-														}
-
-													}
-
-												}
-, 												{
-													"speed" : 													{
-														"value" : 0.559055118110237
-													}
-,
-													"randomtrigger" : 													{
-														"value" : 0.0
-													}
-,
-													"__sps" : 													{
-														"granular" : 														{
-															"grainlength" : 															{
-																"value" : 0.220472440944882
-															}
-,
-															"basefreq" : 															{
-																"value" : 261.625565410470642
-															}
-,
-															"panpos" : 															{
-																"value" : 0.52
-															}
-,
-															"starttime" : 															{
-																"value" : 0.275590551181102
-															}
-,
-															"buffchan" : 															{
-																"value" : 0.0
-															}
-,
-															"__sps" : 															{
-																"retrigger-logic" : 																{
-
-																}
-
-															}
-
-														}
-
-													}
-
-												}
-, 												{
-													"speed" : 													{
-														"value" : 0.559055118110237
-													}
-,
-													"randomtrigger" : 													{
-														"value" : 0.0
-													}
-,
-													"__sps" : 													{
-														"granular" : 														{
-															"grainlength" : 															{
-																"value" : 0.220472440944882
-															}
-,
-															"basefreq" : 															{
-																"value" : 261.625565410470642
-															}
-,
-															"panpos" : 															{
-																"value" : 0.52
-															}
-,
-															"starttime" : 															{
-																"value" : 0.275590551181102
-															}
-,
-															"buffchan" : 															{
-																"value" : 0.0
-															}
-,
-															"__sps" : 															{
-																"retrigger-logic" : 																{
-
-																}
-
-															}
-
-														}
-
-													}
-
-												}
- ]
 										}
 
 									}
 , 									{
+										"speed" : 										{
+											"value" : 0.1
+										}
+,
+										"randomtrigger" : 										{
+											"value" : 0.0
+										}
+,
 										"__sps" : 										{
-											"env.adsr" : 											{
-												"attack" : 												{
-													"value" : 36.734523863959005
+											"granular" : 											{
+												"panpos" : 												{
+													"value" : 0.5
 												}
 ,
-												"decay" : 												{
-													"value" : 30.0
+												"starttime" : 												{
+													"value" : 0.0
 												}
 ,
-												"sustain" : 												{
-													"value" : 0.578740157480315
+												"basefreq" : 												{
+													"value" : 0.0
 												}
 ,
-												"release" : 												{
-													"value" : 427.368439356016665
+												"grainlength" : 												{
+													"value" : 1.0
+												}
+,
+												"buffchan" : 												{
+													"value" : 0.0
+												}
+,
+												"__sps" : 												{
+													"retrigger-logic" : 													{
+
+													}
+
 												}
 
 											}
-,
-											"grain" : [ 												{
-													"speed" : 													{
-														"value" : 0.559055118110237
-													}
-,
-													"randomtrigger" : 													{
-														"value" : 0.0
-													}
-,
-													"__sps" : 													{
-														"granular" : 														{
-															"grainlength" : 															{
-																"value" : 0.220472440944882
-															}
-,
-															"basefreq" : 															{
-																"value" : 261.625565410470642
-															}
-,
-															"panpos" : 															{
-																"value" : 0.52
-															}
-,
-															"starttime" : 															{
-																"value" : 0.275590551181102
-															}
-,
-															"buffchan" : 															{
-																"value" : 0.0
-															}
-,
-															"__sps" : 															{
-																"retrigger-logic" : 																{
 
-																}
-
-															}
-
-														}
-
-													}
-
-												}
-, 												{
-													"speed" : 													{
-														"value" : 0.559055118110237
-													}
-,
-													"randomtrigger" : 													{
-														"value" : 0.0
-													}
-,
-													"__sps" : 													{
-														"granular" : 														{
-															"grainlength" : 															{
-																"value" : 0.220472440944882
-															}
-,
-															"basefreq" : 															{
-																"value" : 261.625565410470642
-															}
-,
-															"panpos" : 															{
-																"value" : 0.52
-															}
-,
-															"starttime" : 															{
-																"value" : 0.275590551181102
-															}
-,
-															"buffchan" : 															{
-																"value" : 0.0
-															}
-,
-															"__sps" : 															{
-																"retrigger-logic" : 																{
-
-																}
-
-															}
-
-														}
-
-													}
-
-												}
-, 												{
-													"speed" : 													{
-														"value" : 0.559055118110237
-													}
-,
-													"randomtrigger" : 													{
-														"value" : 0.0
-													}
-,
-													"__sps" : 													{
-														"granular" : 														{
-															"grainlength" : 															{
-																"value" : 0.220472440944882
-															}
-,
-															"basefreq" : 															{
-																"value" : 261.625565410470642
-															}
-,
-															"panpos" : 															{
-																"value" : 0.52
-															}
-,
-															"starttime" : 															{
-																"value" : 0.275590551181102
-															}
-,
-															"buffchan" : 															{
-																"value" : 0.0
-															}
-,
-															"__sps" : 															{
-																"retrigger-logic" : 																{
-
-																}
-
-															}
-
-														}
-
-													}
-
-												}
-, 												{
-													"speed" : 													{
-														"value" : 0.559055118110237
-													}
-,
-													"randomtrigger" : 													{
-														"value" : 0.0
-													}
-,
-													"__sps" : 													{
-														"granular" : 														{
-															"grainlength" : 															{
-																"value" : 0.220472440944882
-															}
-,
-															"basefreq" : 															{
-																"value" : 261.625565410470642
-															}
-,
-															"panpos" : 															{
-																"value" : 0.52
-															}
-,
-															"starttime" : 															{
-																"value" : 0.275590551181102
-															}
-,
-															"buffchan" : 															{
-																"value" : 0.0
-															}
-,
-															"__sps" : 															{
-																"retrigger-logic" : 																{
-
-																}
-
-															}
-
-														}
-
-													}
-
-												}
-, 												{
-													"speed" : 													{
-														"value" : 0.559055118110237
-													}
-,
-													"randomtrigger" : 													{
-														"value" : 0.0
-													}
-,
-													"__sps" : 													{
-														"granular" : 														{
-															"grainlength" : 															{
-																"value" : 0.220472440944882
-															}
-,
-															"basefreq" : 															{
-																"value" : 261.625565410470642
-															}
-,
-															"panpos" : 															{
-																"value" : 0.52
-															}
-,
-															"starttime" : 															{
-																"value" : 0.275590551181102
-															}
-,
-															"buffchan" : 															{
-																"value" : 0.0
-															}
-,
-															"__sps" : 															{
-																"retrigger-logic" : 																{
-
-																}
-
-															}
-
-														}
-
-													}
-
-												}
-, 												{
-													"speed" : 													{
-														"value" : 0.559055118110237
-													}
-,
-													"randomtrigger" : 													{
-														"value" : 0.0
-													}
-,
-													"__sps" : 													{
-														"granular" : 														{
-															"grainlength" : 															{
-																"value" : 0.220472440944882
-															}
-,
-															"basefreq" : 															{
-																"value" : 261.625565410470642
-															}
-,
-															"panpos" : 															{
-																"value" : 0.52
-															}
-,
-															"starttime" : 															{
-																"value" : 0.275590551181102
-															}
-,
-															"buffchan" : 															{
-																"value" : 0.0
-															}
-,
-															"__sps" : 															{
-																"retrigger-logic" : 																{
-
-																}
-
-															}
-
-														}
-
-													}
-
-												}
-, 												{
-													"speed" : 													{
-														"value" : 0.559055118110237
-													}
-,
-													"randomtrigger" : 													{
-														"value" : 0.0
-													}
-,
-													"__sps" : 													{
-														"granular" : 														{
-															"grainlength" : 															{
-																"value" : 0.220472440944882
-															}
-,
-															"basefreq" : 															{
-																"value" : 261.625565410470642
-															}
-,
-															"panpos" : 															{
-																"value" : 0.52
-															}
-,
-															"starttime" : 															{
-																"value" : 0.275590551181102
-															}
-,
-															"buffchan" : 															{
-																"value" : 0.0
-															}
-,
-															"__sps" : 															{
-																"retrigger-logic" : 																{
-
-																}
-
-															}
-
-														}
-
-													}
-
-												}
-, 												{
-													"speed" : 													{
-														"value" : 0.559055118110237
-													}
-,
-													"randomtrigger" : 													{
-														"value" : 0.0
-													}
-,
-													"__sps" : 													{
-														"granular" : 														{
-															"grainlength" : 															{
-																"value" : 0.220472440944882
-															}
-,
-															"basefreq" : 															{
-																"value" : 261.625565410470642
-															}
-,
-															"panpos" : 															{
-																"value" : 0.52
-															}
-,
-															"starttime" : 															{
-																"value" : 0.275590551181102
-															}
-,
-															"buffchan" : 															{
-																"value" : 0.0
-															}
-,
-															"__sps" : 															{
-																"retrigger-logic" : 																{
-
-																}
-
-															}
-
-														}
-
-													}
-
-												}
- ]
 										}
 
 									}
 , 									{
+										"speed" : 										{
+											"value" : 0.1
+										}
+,
+										"randomtrigger" : 										{
+											"value" : 0.0
+										}
+,
 										"__sps" : 										{
-											"env.adsr" : 											{
-												"attack" : 												{
-													"value" : 36.734523863959005
+											"granular" : 											{
+												"panpos" : 												{
+													"value" : 0.5
 												}
 ,
-												"decay" : 												{
-													"value" : 30.0
+												"starttime" : 												{
+													"value" : 0.0
 												}
 ,
-												"sustain" : 												{
-													"value" : 0.578740157480315
+												"basefreq" : 												{
+													"value" : 0.0
 												}
 ,
-												"release" : 												{
-													"value" : 427.368439356016665
+												"grainlength" : 												{
+													"value" : 1.0
+												}
+,
+												"buffchan" : 												{
+													"value" : 0.0
+												}
+,
+												"__sps" : 												{
+													"retrigger-logic" : 													{
+
+													}
+
 												}
 
 											}
-,
-											"grain" : [ 												{
-													"speed" : 													{
-														"value" : 0.559055118110237
-													}
-,
-													"randomtrigger" : 													{
-														"value" : 0.0
-													}
-,
-													"__sps" : 													{
-														"granular" : 														{
-															"grainlength" : 															{
-																"value" : 0.220472440944882
-															}
-,
-															"basefreq" : 															{
-																"value" : 261.625565410470642
-															}
-,
-															"panpos" : 															{
-																"value" : 0.52
-															}
-,
-															"starttime" : 															{
-																"value" : 0.275590551181102
-															}
-,
-															"buffchan" : 															{
-																"value" : 0.0
-															}
-,
-															"__sps" : 															{
-																"retrigger-logic" : 																{
 
-																}
-
-															}
-
-														}
-
-													}
-
-												}
-, 												{
-													"speed" : 													{
-														"value" : 0.559055118110237
-													}
-,
-													"randomtrigger" : 													{
-														"value" : 0.0
-													}
-,
-													"__sps" : 													{
-														"granular" : 														{
-															"grainlength" : 															{
-																"value" : 0.220472440944882
-															}
-,
-															"basefreq" : 															{
-																"value" : 261.625565410470642
-															}
-,
-															"panpos" : 															{
-																"value" : 0.52
-															}
-,
-															"starttime" : 															{
-																"value" : 0.275590551181102
-															}
-,
-															"buffchan" : 															{
-																"value" : 0.0
-															}
-,
-															"__sps" : 															{
-																"retrigger-logic" : 																{
-
-																}
-
-															}
-
-														}
-
-													}
-
-												}
-, 												{
-													"speed" : 													{
-														"value" : 0.559055118110237
-													}
-,
-													"randomtrigger" : 													{
-														"value" : 0.0
-													}
-,
-													"__sps" : 													{
-														"granular" : 														{
-															"grainlength" : 															{
-																"value" : 0.220472440944882
-															}
-,
-															"basefreq" : 															{
-																"value" : 261.625565410470642
-															}
-,
-															"panpos" : 															{
-																"value" : 0.52
-															}
-,
-															"starttime" : 															{
-																"value" : 0.275590551181102
-															}
-,
-															"buffchan" : 															{
-																"value" : 0.0
-															}
-,
-															"__sps" : 															{
-																"retrigger-logic" : 																{
-
-																}
-
-															}
-
-														}
-
-													}
-
-												}
-, 												{
-													"speed" : 													{
-														"value" : 0.559055118110237
-													}
-,
-													"randomtrigger" : 													{
-														"value" : 0.0
-													}
-,
-													"__sps" : 													{
-														"granular" : 														{
-															"grainlength" : 															{
-																"value" : 0.220472440944882
-															}
-,
-															"basefreq" : 															{
-																"value" : 261.625565410470642
-															}
-,
-															"panpos" : 															{
-																"value" : 0.52
-															}
-,
-															"starttime" : 															{
-																"value" : 0.275590551181102
-															}
-,
-															"buffchan" : 															{
-																"value" : 0.0
-															}
-,
-															"__sps" : 															{
-																"retrigger-logic" : 																{
-
-																}
-
-															}
-
-														}
-
-													}
-
-												}
-, 												{
-													"speed" : 													{
-														"value" : 0.559055118110237
-													}
-,
-													"randomtrigger" : 													{
-														"value" : 0.0
-													}
-,
-													"__sps" : 													{
-														"granular" : 														{
-															"grainlength" : 															{
-																"value" : 0.220472440944882
-															}
-,
-															"basefreq" : 															{
-																"value" : 261.625565410470642
-															}
-,
-															"panpos" : 															{
-																"value" : 0.52
-															}
-,
-															"starttime" : 															{
-																"value" : 0.275590551181102
-															}
-,
-															"buffchan" : 															{
-																"value" : 0.0
-															}
-,
-															"__sps" : 															{
-																"retrigger-logic" : 																{
-
-																}
-
-															}
-
-														}
-
-													}
-
-												}
-, 												{
-													"speed" : 													{
-														"value" : 0.559055118110237
-													}
-,
-													"randomtrigger" : 													{
-														"value" : 0.0
-													}
-,
-													"__sps" : 													{
-														"granular" : 														{
-															"grainlength" : 															{
-																"value" : 0.220472440944882
-															}
-,
-															"basefreq" : 															{
-																"value" : 261.625565410470642
-															}
-,
-															"panpos" : 															{
-																"value" : 0.52
-															}
-,
-															"starttime" : 															{
-																"value" : 0.275590551181102
-															}
-,
-															"buffchan" : 															{
-																"value" : 0.0
-															}
-,
-															"__sps" : 															{
-																"retrigger-logic" : 																{
-
-																}
-
-															}
-
-														}
-
-													}
-
-												}
-, 												{
-													"speed" : 													{
-														"value" : 0.559055118110237
-													}
-,
-													"randomtrigger" : 													{
-														"value" : 0.0
-													}
-,
-													"__sps" : 													{
-														"granular" : 														{
-															"grainlength" : 															{
-																"value" : 0.220472440944882
-															}
-,
-															"basefreq" : 															{
-																"value" : 261.625565410470642
-															}
-,
-															"panpos" : 															{
-																"value" : 0.52
-															}
-,
-															"starttime" : 															{
-																"value" : 0.275590551181102
-															}
-,
-															"buffchan" : 															{
-																"value" : 0.0
-															}
-,
-															"__sps" : 															{
-																"retrigger-logic" : 																{
-
-																}
-
-															}
-
-														}
-
-													}
-
-												}
-, 												{
-													"speed" : 													{
-														"value" : 0.559055118110237
-													}
-,
-													"randomtrigger" : 													{
-														"value" : 0.0
-													}
-,
-													"__sps" : 													{
-														"granular" : 														{
-															"grainlength" : 															{
-																"value" : 0.220472440944882
-															}
-,
-															"basefreq" : 															{
-																"value" : 261.625565410470642
-															}
-,
-															"panpos" : 															{
-																"value" : 0.52
-															}
-,
-															"starttime" : 															{
-																"value" : 0.275590551181102
-															}
-,
-															"buffchan" : 															{
-																"value" : 0.0
-															}
-,
-															"__sps" : 															{
-																"retrigger-logic" : 																{
-
-																}
-
-															}
-
-														}
-
-													}
-
-												}
- ]
 										}
 
 									}
 , 									{
+										"speed" : 										{
+											"value" : 0.1
+										}
+,
+										"randomtrigger" : 										{
+											"value" : 0.0
+										}
+,
 										"__sps" : 										{
-											"env.adsr" : 											{
-												"attack" : 												{
-													"value" : 36.734523863959005
+											"granular" : 											{
+												"panpos" : 												{
+													"value" : 0.5
 												}
 ,
-												"decay" : 												{
-													"value" : 30.0
+												"starttime" : 												{
+													"value" : 0.0
 												}
 ,
-												"sustain" : 												{
-													"value" : 0.578740157480315
+												"basefreq" : 												{
+													"value" : 0.0
 												}
 ,
-												"release" : 												{
-													"value" : 427.368439356016665
+												"grainlength" : 												{
+													"value" : 1.0
+												}
+,
+												"buffchan" : 												{
+													"value" : 0.0
+												}
+,
+												"__sps" : 												{
+													"retrigger-logic" : 													{
+
+													}
+
 												}
 
 											}
-,
-											"grain" : [ 												{
-													"speed" : 													{
-														"value" : 0.559055118110237
-													}
-,
-													"randomtrigger" : 													{
-														"value" : 0.0
-													}
-,
-													"__sps" : 													{
-														"granular" : 														{
-															"grainlength" : 															{
-																"value" : 0.220472440944882
-															}
-,
-															"basefreq" : 															{
-																"value" : 261.625565410470642
-															}
-,
-															"panpos" : 															{
-																"value" : 0.52
-															}
-,
-															"starttime" : 															{
-																"value" : 0.275590551181102
-															}
-,
-															"buffchan" : 															{
-																"value" : 0.0
-															}
-,
-															"__sps" : 															{
-																"retrigger-logic" : 																{
 
-																}
-
-															}
-
-														}
-
-													}
-
-												}
-, 												{
-													"speed" : 													{
-														"value" : 0.559055118110237
-													}
-,
-													"randomtrigger" : 													{
-														"value" : 0.0
-													}
-,
-													"__sps" : 													{
-														"granular" : 														{
-															"grainlength" : 															{
-																"value" : 0.220472440944882
-															}
-,
-															"basefreq" : 															{
-																"value" : 261.625565410470642
-															}
-,
-															"panpos" : 															{
-																"value" : 0.52
-															}
-,
-															"starttime" : 															{
-																"value" : 0.275590551181102
-															}
-,
-															"buffchan" : 															{
-																"value" : 0.0
-															}
-,
-															"__sps" : 															{
-																"retrigger-logic" : 																{
-
-																}
-
-															}
-
-														}
-
-													}
-
-												}
-, 												{
-													"speed" : 													{
-														"value" : 0.559055118110237
-													}
-,
-													"randomtrigger" : 													{
-														"value" : 0.0
-													}
-,
-													"__sps" : 													{
-														"granular" : 														{
-															"grainlength" : 															{
-																"value" : 0.220472440944882
-															}
-,
-															"basefreq" : 															{
-																"value" : 261.625565410470642
-															}
-,
-															"panpos" : 															{
-																"value" : 0.52
-															}
-,
-															"starttime" : 															{
-																"value" : 0.275590551181102
-															}
-,
-															"buffchan" : 															{
-																"value" : 0.0
-															}
-,
-															"__sps" : 															{
-																"retrigger-logic" : 																{
-
-																}
-
-															}
-
-														}
-
-													}
-
-												}
-, 												{
-													"speed" : 													{
-														"value" : 0.559055118110237
-													}
-,
-													"randomtrigger" : 													{
-														"value" : 0.0
-													}
-,
-													"__sps" : 													{
-														"granular" : 														{
-															"grainlength" : 															{
-																"value" : 0.220472440944882
-															}
-,
-															"basefreq" : 															{
-																"value" : 261.625565410470642
-															}
-,
-															"panpos" : 															{
-																"value" : 0.52
-															}
-,
-															"starttime" : 															{
-																"value" : 0.275590551181102
-															}
-,
-															"buffchan" : 															{
-																"value" : 0.0
-															}
-,
-															"__sps" : 															{
-																"retrigger-logic" : 																{
-
-																}
-
-															}
-
-														}
-
-													}
-
-												}
-, 												{
-													"speed" : 													{
-														"value" : 0.559055118110237
-													}
-,
-													"randomtrigger" : 													{
-														"value" : 0.0
-													}
-,
-													"__sps" : 													{
-														"granular" : 														{
-															"grainlength" : 															{
-																"value" : 0.220472440944882
-															}
-,
-															"basefreq" : 															{
-																"value" : 261.625565410470642
-															}
-,
-															"panpos" : 															{
-																"value" : 0.52
-															}
-,
-															"starttime" : 															{
-																"value" : 0.275590551181102
-															}
-,
-															"buffchan" : 															{
-																"value" : 0.0
-															}
-,
-															"__sps" : 															{
-																"retrigger-logic" : 																{
-
-																}
-
-															}
-
-														}
-
-													}
-
-												}
-, 												{
-													"speed" : 													{
-														"value" : 0.559055118110237
-													}
-,
-													"randomtrigger" : 													{
-														"value" : 0.0
-													}
-,
-													"__sps" : 													{
-														"granular" : 														{
-															"grainlength" : 															{
-																"value" : 0.220472440944882
-															}
-,
-															"basefreq" : 															{
-																"value" : 261.625565410470642
-															}
-,
-															"panpos" : 															{
-																"value" : 0.52
-															}
-,
-															"starttime" : 															{
-																"value" : 0.275590551181102
-															}
-,
-															"buffchan" : 															{
-																"value" : 0.0
-															}
-,
-															"__sps" : 															{
-																"retrigger-logic" : 																{
-
-																}
-
-															}
-
-														}
-
-													}
-
-												}
-, 												{
-													"speed" : 													{
-														"value" : 0.559055118110237
-													}
-,
-													"randomtrigger" : 													{
-														"value" : 0.0
-													}
-,
-													"__sps" : 													{
-														"granular" : 														{
-															"grainlength" : 															{
-																"value" : 0.220472440944882
-															}
-,
-															"basefreq" : 															{
-																"value" : 261.625565410470642
-															}
-,
-															"panpos" : 															{
-																"value" : 0.52
-															}
-,
-															"starttime" : 															{
-																"value" : 0.275590551181102
-															}
-,
-															"buffchan" : 															{
-																"value" : 0.0
-															}
-,
-															"__sps" : 															{
-																"retrigger-logic" : 																{
-
-																}
-
-															}
-
-														}
-
-													}
-
-												}
-, 												{
-													"speed" : 													{
-														"value" : 0.559055118110237
-													}
-,
-													"randomtrigger" : 													{
-														"value" : 0.0
-													}
-,
-													"__sps" : 													{
-														"granular" : 														{
-															"grainlength" : 															{
-																"value" : 0.220472440944882
-															}
-,
-															"basefreq" : 															{
-																"value" : 261.625565410470642
-															}
-,
-															"panpos" : 															{
-																"value" : 0.52
-															}
-,
-															"starttime" : 															{
-																"value" : 0.275590551181102
-															}
-,
-															"buffchan" : 															{
-																"value" : 0.0
-															}
-,
-															"__sps" : 															{
-																"retrigger-logic" : 																{
-
-																}
-
-															}
-
-														}
-
-													}
-
-												}
- ]
 										}
 
 									}
@@ -2753,1479 +1296,194 @@
 										}
 ,
 										"__sps" : 										{
-											"poly" : [ 												{
+											"env.adsr" : 											{
+												"attack" : 												{
+													"value" : 30.0
+												}
+,
+												"decay" : 												{
+													"value" : 200.0
+												}
+,
+												"sustain" : 												{
+													"value" : 0.5
+												}
+,
+												"release" : 												{
+													"value" : 300.0
+												}
+
+											}
+,
+											"grain" : [ 												{
+													"speed" : 													{
+														"value" : 0.1
+													}
+,
+													"randomtrigger" : 													{
+														"value" : 0.0
+													}
+,
 													"__sps" : 													{
-														"env.adsr" : 														{
-															"attack" : 															{
-																"value" : 36.734523863959005
+														"granular" : 														{
+															"panpos" : 															{
+																"value" : 0.5
 															}
 ,
-															"decay" : 															{
-																"value" : 30.0
+															"starttime" : 															{
+																"value" : 0.0
 															}
 ,
-															"sustain" : 															{
-																"value" : 0.578740157480315
+															"basefreq" : 															{
+																"value" : 0.0
 															}
 ,
-															"release" : 															{
-																"value" : 427.368439356016665
+															"grainlength" : 															{
+																"value" : 1.0
+															}
+,
+															"buffchan" : 															{
+																"value" : 0.0
+															}
+,
+															"__sps" : 															{
+																"retrigger-logic" : 																{
+
+																}
+
 															}
 
 														}
-,
-														"grain" : [ 															{
-																"speed" : 																{
-																	"value" : 0.559055118110237
-																}
-,
-																"randomtrigger" : 																{
-																	"value" : 0.0
-																}
-,
-																"__sps" : 																{
-																	"granular" : 																	{
-																		"grainlength" : 																		{
-																			"value" : 0.220472440944882
-																		}
-,
-																		"basefreq" : 																		{
-																			"value" : 261.625565410470642
-																		}
-,
-																		"panpos" : 																		{
-																			"value" : 0.52
-																		}
-,
-																		"starttime" : 																		{
-																			"value" : 0.275590551181102
-																		}
-,
-																		"buffchan" : 																		{
-																			"value" : 0.0
-																		}
-,
-																		"__sps" : 																		{
-																			"retrigger-logic" : 																			{
 
-																			}
-
-																		}
-
-																	}
-
-																}
-
-															}
-, 															{
-																"speed" : 																{
-																	"value" : 0.559055118110237
-																}
-,
-																"randomtrigger" : 																{
-																	"value" : 0.0
-																}
-,
-																"__sps" : 																{
-																	"granular" : 																	{
-																		"grainlength" : 																		{
-																			"value" : 0.220472440944882
-																		}
-,
-																		"basefreq" : 																		{
-																			"value" : 261.625565410470642
-																		}
-,
-																		"panpos" : 																		{
-																			"value" : 0.52
-																		}
-,
-																		"starttime" : 																		{
-																			"value" : 0.275590551181102
-																		}
-,
-																		"buffchan" : 																		{
-																			"value" : 0.0
-																		}
-,
-																		"__sps" : 																		{
-																			"retrigger-logic" : 																			{
-
-																			}
-
-																		}
-
-																	}
-
-																}
-
-															}
-, 															{
-																"speed" : 																{
-																	"value" : 0.559055118110237
-																}
-,
-																"randomtrigger" : 																{
-																	"value" : 0.0
-																}
-,
-																"__sps" : 																{
-																	"granular" : 																	{
-																		"grainlength" : 																		{
-																			"value" : 0.220472440944882
-																		}
-,
-																		"basefreq" : 																		{
-																			"value" : 261.625565410470642
-																		}
-,
-																		"panpos" : 																		{
-																			"value" : 0.52
-																		}
-,
-																		"starttime" : 																		{
-																			"value" : 0.275590551181102
-																		}
-,
-																		"buffchan" : 																		{
-																			"value" : 0.0
-																		}
-,
-																		"__sps" : 																		{
-																			"retrigger-logic" : 																			{
-
-																			}
-
-																		}
-
-																	}
-
-																}
-
-															}
-, 															{
-																"speed" : 																{
-																	"value" : 0.559055118110237
-																}
-,
-																"randomtrigger" : 																{
-																	"value" : 0.0
-																}
-,
-																"__sps" : 																{
-																	"granular" : 																	{
-																		"grainlength" : 																		{
-																			"value" : 0.220472440944882
-																		}
-,
-																		"basefreq" : 																		{
-																			"value" : 261.625565410470642
-																		}
-,
-																		"panpos" : 																		{
-																			"value" : 0.52
-																		}
-,
-																		"starttime" : 																		{
-																			"value" : 0.275590551181102
-																		}
-,
-																		"buffchan" : 																		{
-																			"value" : 0.0
-																		}
-,
-																		"__sps" : 																		{
-																			"retrigger-logic" : 																			{
-
-																			}
-
-																		}
-
-																	}
-
-																}
-
-															}
-, 															{
-																"speed" : 																{
-																	"value" : 0.559055118110237
-																}
-,
-																"randomtrigger" : 																{
-																	"value" : 0.0
-																}
-,
-																"__sps" : 																{
-																	"granular" : 																	{
-																		"grainlength" : 																		{
-																			"value" : 0.220472440944882
-																		}
-,
-																		"basefreq" : 																		{
-																			"value" : 261.625565410470642
-																		}
-,
-																		"panpos" : 																		{
-																			"value" : 0.52
-																		}
-,
-																		"starttime" : 																		{
-																			"value" : 0.275590551181102
-																		}
-,
-																		"buffchan" : 																		{
-																			"value" : 0.0
-																		}
-,
-																		"__sps" : 																		{
-																			"retrigger-logic" : 																			{
-
-																			}
-
-																		}
-
-																	}
-
-																}
-
-															}
-, 															{
-																"speed" : 																{
-																	"value" : 0.559055118110237
-																}
-,
-																"randomtrigger" : 																{
-																	"value" : 0.0
-																}
-,
-																"__sps" : 																{
-																	"granular" : 																	{
-																		"grainlength" : 																		{
-																			"value" : 0.220472440944882
-																		}
-,
-																		"basefreq" : 																		{
-																			"value" : 261.625565410470642
-																		}
-,
-																		"panpos" : 																		{
-																			"value" : 0.52
-																		}
-,
-																		"starttime" : 																		{
-																			"value" : 0.275590551181102
-																		}
-,
-																		"buffchan" : 																		{
-																			"value" : 0.0
-																		}
-,
-																		"__sps" : 																		{
-																			"retrigger-logic" : 																			{
-
-																			}
-
-																		}
-
-																	}
-
-																}
-
-															}
-, 															{
-																"speed" : 																{
-																	"value" : 0.559055118110237
-																}
-,
-																"randomtrigger" : 																{
-																	"value" : 0.0
-																}
-,
-																"__sps" : 																{
-																	"granular" : 																	{
-																		"grainlength" : 																		{
-																			"value" : 0.220472440944882
-																		}
-,
-																		"basefreq" : 																		{
-																			"value" : 261.625565410470642
-																		}
-,
-																		"panpos" : 																		{
-																			"value" : 0.52
-																		}
-,
-																		"starttime" : 																		{
-																			"value" : 0.275590551181102
-																		}
-,
-																		"buffchan" : 																		{
-																			"value" : 0.0
-																		}
-,
-																		"__sps" : 																		{
-																			"retrigger-logic" : 																			{
-
-																			}
-
-																		}
-
-																	}
-
-																}
-
-															}
-, 															{
-																"speed" : 																{
-																	"value" : 0.559055118110237
-																}
-,
-																"randomtrigger" : 																{
-																	"value" : 0.0
-																}
-,
-																"__sps" : 																{
-																	"granular" : 																	{
-																		"grainlength" : 																		{
-																			"value" : 0.220472440944882
-																		}
-,
-																		"basefreq" : 																		{
-																			"value" : 261.625565410470642
-																		}
-,
-																		"panpos" : 																		{
-																			"value" : 0.52
-																		}
-,
-																		"starttime" : 																		{
-																			"value" : 0.275590551181102
-																		}
-,
-																		"buffchan" : 																		{
-																			"value" : 0.0
-																		}
-,
-																		"__sps" : 																		{
-																			"retrigger-logic" : 																			{
-
-																			}
-
-																		}
-
-																	}
-
-																}
-
-															}
- ]
 													}
 
 												}
 , 												{
+													"speed" : 													{
+														"value" : 0.1
+													}
+,
+													"randomtrigger" : 													{
+														"value" : 0.0
+													}
+,
 													"__sps" : 													{
-														"env.adsr" : 														{
-															"attack" : 															{
-																"value" : 36.734523863959005
+														"granular" : 														{
+															"panpos" : 															{
+																"value" : 0.5
 															}
 ,
-															"decay" : 															{
-																"value" : 30.0
+															"starttime" : 															{
+																"value" : 0.0
 															}
 ,
-															"sustain" : 															{
-																"value" : 0.578740157480315
+															"basefreq" : 															{
+																"value" : 0.0
 															}
 ,
-															"release" : 															{
-																"value" : 427.368439356016665
+															"grainlength" : 															{
+																"value" : 1.0
+															}
+,
+															"buffchan" : 															{
+																"value" : 0.0
+															}
+,
+															"__sps" : 															{
+																"retrigger-logic" : 																{
+
+																}
+
 															}
 
 														}
-,
-														"grain" : [ 															{
-																"speed" : 																{
-																	"value" : 0.559055118110237
-																}
-,
-																"randomtrigger" : 																{
-																	"value" : 0.0
-																}
-,
-																"__sps" : 																{
-																	"granular" : 																	{
-																		"grainlength" : 																		{
-																			"value" : 0.220472440944882
-																		}
-,
-																		"basefreq" : 																		{
-																			"value" : 261.625565410470642
-																		}
-,
-																		"panpos" : 																		{
-																			"value" : 0.52
-																		}
-,
-																		"starttime" : 																		{
-																			"value" : 0.275590551181102
-																		}
-,
-																		"buffchan" : 																		{
-																			"value" : 0.0
-																		}
-,
-																		"__sps" : 																		{
-																			"retrigger-logic" : 																			{
 
-																			}
-
-																		}
-
-																	}
-
-																}
-
-															}
-, 															{
-																"speed" : 																{
-																	"value" : 0.559055118110237
-																}
-,
-																"randomtrigger" : 																{
-																	"value" : 0.0
-																}
-,
-																"__sps" : 																{
-																	"granular" : 																	{
-																		"grainlength" : 																		{
-																			"value" : 0.220472440944882
-																		}
-,
-																		"basefreq" : 																		{
-																			"value" : 261.625565410470642
-																		}
-,
-																		"panpos" : 																		{
-																			"value" : 0.52
-																		}
-,
-																		"starttime" : 																		{
-																			"value" : 0.275590551181102
-																		}
-,
-																		"buffchan" : 																		{
-																			"value" : 0.0
-																		}
-,
-																		"__sps" : 																		{
-																			"retrigger-logic" : 																			{
-
-																			}
-
-																		}
-
-																	}
-
-																}
-
-															}
-, 															{
-																"speed" : 																{
-																	"value" : 0.559055118110237
-																}
-,
-																"randomtrigger" : 																{
-																	"value" : 0.0
-																}
-,
-																"__sps" : 																{
-																	"granular" : 																	{
-																		"grainlength" : 																		{
-																			"value" : 0.220472440944882
-																		}
-,
-																		"basefreq" : 																		{
-																			"value" : 261.625565410470642
-																		}
-,
-																		"panpos" : 																		{
-																			"value" : 0.52
-																		}
-,
-																		"starttime" : 																		{
-																			"value" : 0.275590551181102
-																		}
-,
-																		"buffchan" : 																		{
-																			"value" : 0.0
-																		}
-,
-																		"__sps" : 																		{
-																			"retrigger-logic" : 																			{
-
-																			}
-
-																		}
-
-																	}
-
-																}
-
-															}
-, 															{
-																"speed" : 																{
-																	"value" : 0.559055118110237
-																}
-,
-																"randomtrigger" : 																{
-																	"value" : 0.0
-																}
-,
-																"__sps" : 																{
-																	"granular" : 																	{
-																		"grainlength" : 																		{
-																			"value" : 0.220472440944882
-																		}
-,
-																		"basefreq" : 																		{
-																			"value" : 261.625565410470642
-																		}
-,
-																		"panpos" : 																		{
-																			"value" : 0.52
-																		}
-,
-																		"starttime" : 																		{
-																			"value" : 0.275590551181102
-																		}
-,
-																		"buffchan" : 																		{
-																			"value" : 0.0
-																		}
-,
-																		"__sps" : 																		{
-																			"retrigger-logic" : 																			{
-
-																			}
-
-																		}
-
-																	}
-
-																}
-
-															}
-, 															{
-																"speed" : 																{
-																	"value" : 0.559055118110237
-																}
-,
-																"randomtrigger" : 																{
-																	"value" : 0.0
-																}
-,
-																"__sps" : 																{
-																	"granular" : 																	{
-																		"grainlength" : 																		{
-																			"value" : 0.220472440944882
-																		}
-,
-																		"basefreq" : 																		{
-																			"value" : 261.625565410470642
-																		}
-,
-																		"panpos" : 																		{
-																			"value" : 0.52
-																		}
-,
-																		"starttime" : 																		{
-																			"value" : 0.275590551181102
-																		}
-,
-																		"buffchan" : 																		{
-																			"value" : 0.0
-																		}
-,
-																		"__sps" : 																		{
-																			"retrigger-logic" : 																			{
-
-																			}
-
-																		}
-
-																	}
-
-																}
-
-															}
-, 															{
-																"speed" : 																{
-																	"value" : 0.559055118110237
-																}
-,
-																"randomtrigger" : 																{
-																	"value" : 0.0
-																}
-,
-																"__sps" : 																{
-																	"granular" : 																	{
-																		"grainlength" : 																		{
-																			"value" : 0.220472440944882
-																		}
-,
-																		"basefreq" : 																		{
-																			"value" : 261.625565410470642
-																		}
-,
-																		"panpos" : 																		{
-																			"value" : 0.52
-																		}
-,
-																		"starttime" : 																		{
-																			"value" : 0.275590551181102
-																		}
-,
-																		"buffchan" : 																		{
-																			"value" : 0.0
-																		}
-,
-																		"__sps" : 																		{
-																			"retrigger-logic" : 																			{
-
-																			}
-
-																		}
-
-																	}
-
-																}
-
-															}
-, 															{
-																"speed" : 																{
-																	"value" : 0.559055118110237
-																}
-,
-																"randomtrigger" : 																{
-																	"value" : 0.0
-																}
-,
-																"__sps" : 																{
-																	"granular" : 																	{
-																		"grainlength" : 																		{
-																			"value" : 0.220472440944882
-																		}
-,
-																		"basefreq" : 																		{
-																			"value" : 261.625565410470642
-																		}
-,
-																		"panpos" : 																		{
-																			"value" : 0.52
-																		}
-,
-																		"starttime" : 																		{
-																			"value" : 0.275590551181102
-																		}
-,
-																		"buffchan" : 																		{
-																			"value" : 0.0
-																		}
-,
-																		"__sps" : 																		{
-																			"retrigger-logic" : 																			{
-
-																			}
-
-																		}
-
-																	}
-
-																}
-
-															}
-, 															{
-																"speed" : 																{
-																	"value" : 0.559055118110237
-																}
-,
-																"randomtrigger" : 																{
-																	"value" : 0.0
-																}
-,
-																"__sps" : 																{
-																	"granular" : 																	{
-																		"grainlength" : 																		{
-																			"value" : 0.220472440944882
-																		}
-,
-																		"basefreq" : 																		{
-																			"value" : 261.625565410470642
-																		}
-,
-																		"panpos" : 																		{
-																			"value" : 0.52
-																		}
-,
-																		"starttime" : 																		{
-																			"value" : 0.275590551181102
-																		}
-,
-																		"buffchan" : 																		{
-																			"value" : 0.0
-																		}
-,
-																		"__sps" : 																		{
-																			"retrigger-logic" : 																			{
-
-																			}
-
-																		}
-
-																	}
-
-																}
-
-															}
- ]
 													}
 
 												}
 , 												{
+													"speed" : 													{
+														"value" : 0.1
+													}
+,
+													"randomtrigger" : 													{
+														"value" : 0.0
+													}
+,
 													"__sps" : 													{
-														"env.adsr" : 														{
-															"attack" : 															{
-																"value" : 36.734523863959005
+														"granular" : 														{
+															"panpos" : 															{
+																"value" : 0.5
 															}
 ,
-															"decay" : 															{
-																"value" : 30.0
+															"starttime" : 															{
+																"value" : 0.0
 															}
 ,
-															"sustain" : 															{
-																"value" : 0.578740157480315
+															"basefreq" : 															{
+																"value" : 0.0
 															}
 ,
-															"release" : 															{
-																"value" : 427.368439356016665
+															"grainlength" : 															{
+																"value" : 1.0
+															}
+,
+															"buffchan" : 															{
+																"value" : 0.0
+															}
+,
+															"__sps" : 															{
+																"retrigger-logic" : 																{
+
+																}
+
 															}
 
 														}
-,
-														"grain" : [ 															{
-																"speed" : 																{
-																	"value" : 0.559055118110237
-																}
-,
-																"randomtrigger" : 																{
-																	"value" : 0.0
-																}
-,
-																"__sps" : 																{
-																	"granular" : 																	{
-																		"grainlength" : 																		{
-																			"value" : 0.220472440944882
-																		}
-,
-																		"basefreq" : 																		{
-																			"value" : 261.625565410470642
-																		}
-,
-																		"panpos" : 																		{
-																			"value" : 0.52
-																		}
-,
-																		"starttime" : 																		{
-																			"value" : 0.275590551181102
-																		}
-,
-																		"buffchan" : 																		{
-																			"value" : 0.0
-																		}
-,
-																		"__sps" : 																		{
-																			"retrigger-logic" : 																			{
 
-																			}
-
-																		}
-
-																	}
-
-																}
-
-															}
-, 															{
-																"speed" : 																{
-																	"value" : 0.559055118110237
-																}
-,
-																"randomtrigger" : 																{
-																	"value" : 0.0
-																}
-,
-																"__sps" : 																{
-																	"granular" : 																	{
-																		"grainlength" : 																		{
-																			"value" : 0.220472440944882
-																		}
-,
-																		"basefreq" : 																		{
-																			"value" : 261.625565410470642
-																		}
-,
-																		"panpos" : 																		{
-																			"value" : 0.52
-																		}
-,
-																		"starttime" : 																		{
-																			"value" : 0.275590551181102
-																		}
-,
-																		"buffchan" : 																		{
-																			"value" : 0.0
-																		}
-,
-																		"__sps" : 																		{
-																			"retrigger-logic" : 																			{
-
-																			}
-
-																		}
-
-																	}
-
-																}
-
-															}
-, 															{
-																"speed" : 																{
-																	"value" : 0.559055118110237
-																}
-,
-																"randomtrigger" : 																{
-																	"value" : 0.0
-																}
-,
-																"__sps" : 																{
-																	"granular" : 																	{
-																		"grainlength" : 																		{
-																			"value" : 0.220472440944882
-																		}
-,
-																		"basefreq" : 																		{
-																			"value" : 261.625565410470642
-																		}
-,
-																		"panpos" : 																		{
-																			"value" : 0.52
-																		}
-,
-																		"starttime" : 																		{
-																			"value" : 0.275590551181102
-																		}
-,
-																		"buffchan" : 																		{
-																			"value" : 0.0
-																		}
-,
-																		"__sps" : 																		{
-																			"retrigger-logic" : 																			{
-
-																			}
-
-																		}
-
-																	}
-
-																}
-
-															}
-, 															{
-																"speed" : 																{
-																	"value" : 0.559055118110237
-																}
-,
-																"randomtrigger" : 																{
-																	"value" : 0.0
-																}
-,
-																"__sps" : 																{
-																	"granular" : 																	{
-																		"grainlength" : 																		{
-																			"value" : 0.220472440944882
-																		}
-,
-																		"basefreq" : 																		{
-																			"value" : 261.625565410470642
-																		}
-,
-																		"panpos" : 																		{
-																			"value" : 0.52
-																		}
-,
-																		"starttime" : 																		{
-																			"value" : 0.275590551181102
-																		}
-,
-																		"buffchan" : 																		{
-																			"value" : 0.0
-																		}
-,
-																		"__sps" : 																		{
-																			"retrigger-logic" : 																			{
-
-																			}
-
-																		}
-
-																	}
-
-																}
-
-															}
-, 															{
-																"speed" : 																{
-																	"value" : 0.559055118110237
-																}
-,
-																"randomtrigger" : 																{
-																	"value" : 0.0
-																}
-,
-																"__sps" : 																{
-																	"granular" : 																	{
-																		"grainlength" : 																		{
-																			"value" : 0.220472440944882
-																		}
-,
-																		"basefreq" : 																		{
-																			"value" : 261.625565410470642
-																		}
-,
-																		"panpos" : 																		{
-																			"value" : 0.52
-																		}
-,
-																		"starttime" : 																		{
-																			"value" : 0.275590551181102
-																		}
-,
-																		"buffchan" : 																		{
-																			"value" : 0.0
-																		}
-,
-																		"__sps" : 																		{
-																			"retrigger-logic" : 																			{
-
-																			}
-
-																		}
-
-																	}
-
-																}
-
-															}
-, 															{
-																"speed" : 																{
-																	"value" : 0.559055118110237
-																}
-,
-																"randomtrigger" : 																{
-																	"value" : 0.0
-																}
-,
-																"__sps" : 																{
-																	"granular" : 																	{
-																		"grainlength" : 																		{
-																			"value" : 0.220472440944882
-																		}
-,
-																		"basefreq" : 																		{
-																			"value" : 261.625565410470642
-																		}
-,
-																		"panpos" : 																		{
-																			"value" : 0.52
-																		}
-,
-																		"starttime" : 																		{
-																			"value" : 0.275590551181102
-																		}
-,
-																		"buffchan" : 																		{
-																			"value" : 0.0
-																		}
-,
-																		"__sps" : 																		{
-																			"retrigger-logic" : 																			{
-
-																			}
-
-																		}
-
-																	}
-
-																}
-
-															}
-, 															{
-																"speed" : 																{
-																	"value" : 0.559055118110237
-																}
-,
-																"randomtrigger" : 																{
-																	"value" : 0.0
-																}
-,
-																"__sps" : 																{
-																	"granular" : 																	{
-																		"grainlength" : 																		{
-																			"value" : 0.220472440944882
-																		}
-,
-																		"basefreq" : 																		{
-																			"value" : 261.625565410470642
-																		}
-,
-																		"panpos" : 																		{
-																			"value" : 0.52
-																		}
-,
-																		"starttime" : 																		{
-																			"value" : 0.275590551181102
-																		}
-,
-																		"buffchan" : 																		{
-																			"value" : 0.0
-																		}
-,
-																		"__sps" : 																		{
-																			"retrigger-logic" : 																			{
-
-																			}
-
-																		}
-
-																	}
-
-																}
-
-															}
-, 															{
-																"speed" : 																{
-																	"value" : 0.559055118110237
-																}
-,
-																"randomtrigger" : 																{
-																	"value" : 0.0
-																}
-,
-																"__sps" : 																{
-																	"granular" : 																	{
-																		"grainlength" : 																		{
-																			"value" : 0.220472440944882
-																		}
-,
-																		"basefreq" : 																		{
-																			"value" : 261.625565410470642
-																		}
-,
-																		"panpos" : 																		{
-																			"value" : 0.52
-																		}
-,
-																		"starttime" : 																		{
-																			"value" : 0.275590551181102
-																		}
-,
-																		"buffchan" : 																		{
-																			"value" : 0.0
-																		}
-,
-																		"__sps" : 																		{
-																			"retrigger-logic" : 																			{
-
-																			}
-
-																		}
-
-																	}
-
-																}
-
-															}
- ]
 													}
 
 												}
 , 												{
+													"speed" : 													{
+														"value" : 0.1
+													}
+,
+													"randomtrigger" : 													{
+														"value" : 0.0
+													}
+,
 													"__sps" : 													{
-														"env.adsr" : 														{
-															"attack" : 															{
-																"value" : 36.734523863959005
+														"granular" : 														{
+															"panpos" : 															{
+																"value" : 0.5
 															}
 ,
-															"decay" : 															{
-																"value" : 30.0
+															"starttime" : 															{
+																"value" : 0.0
 															}
 ,
-															"sustain" : 															{
-																"value" : 0.578740157480315
+															"basefreq" : 															{
+																"value" : 0.0
 															}
 ,
-															"release" : 															{
-																"value" : 427.368439356016665
+															"grainlength" : 															{
+																"value" : 1.0
+															}
+,
+															"buffchan" : 															{
+																"value" : 0.0
+															}
+,
+															"__sps" : 															{
+																"retrigger-logic" : 																{
+
+																}
+
 															}
 
 														}
-,
-														"grain" : [ 															{
-																"speed" : 																{
-																	"value" : 0.559055118110237
-																}
-,
-																"randomtrigger" : 																{
-																	"value" : 0.0
-																}
-,
-																"__sps" : 																{
-																	"granular" : 																	{
-																		"grainlength" : 																		{
-																			"value" : 0.220472440944882
-																		}
-,
-																		"basefreq" : 																		{
-																			"value" : 261.625565410470642
-																		}
-,
-																		"panpos" : 																		{
-																			"value" : 0.52
-																		}
-,
-																		"starttime" : 																		{
-																			"value" : 0.275590551181102
-																		}
-,
-																		"buffchan" : 																		{
-																			"value" : 0.0
-																		}
-,
-																		"__sps" : 																		{
-																			"retrigger-logic" : 																			{
 
-																			}
-
-																		}
-
-																	}
-
-																}
-
-															}
-, 															{
-																"speed" : 																{
-																	"value" : 0.559055118110237
-																}
-,
-																"randomtrigger" : 																{
-																	"value" : 0.0
-																}
-,
-																"__sps" : 																{
-																	"granular" : 																	{
-																		"grainlength" : 																		{
-																			"value" : 0.220472440944882
-																		}
-,
-																		"basefreq" : 																		{
-																			"value" : 261.625565410470642
-																		}
-,
-																		"panpos" : 																		{
-																			"value" : 0.52
-																		}
-,
-																		"starttime" : 																		{
-																			"value" : 0.275590551181102
-																		}
-,
-																		"buffchan" : 																		{
-																			"value" : 0.0
-																		}
-,
-																		"__sps" : 																		{
-																			"retrigger-logic" : 																			{
-
-																			}
-
-																		}
-
-																	}
-
-																}
-
-															}
-, 															{
-																"speed" : 																{
-																	"value" : 0.559055118110237
-																}
-,
-																"randomtrigger" : 																{
-																	"value" : 0.0
-																}
-,
-																"__sps" : 																{
-																	"granular" : 																	{
-																		"grainlength" : 																		{
-																			"value" : 0.220472440944882
-																		}
-,
-																		"basefreq" : 																		{
-																			"value" : 261.625565410470642
-																		}
-,
-																		"panpos" : 																		{
-																			"value" : 0.52
-																		}
-,
-																		"starttime" : 																		{
-																			"value" : 0.275590551181102
-																		}
-,
-																		"buffchan" : 																		{
-																			"value" : 0.0
-																		}
-,
-																		"__sps" : 																		{
-																			"retrigger-logic" : 																			{
-
-																			}
-
-																		}
-
-																	}
-
-																}
-
-															}
-, 															{
-																"speed" : 																{
-																	"value" : 0.559055118110237
-																}
-,
-																"randomtrigger" : 																{
-																	"value" : 0.0
-																}
-,
-																"__sps" : 																{
-																	"granular" : 																	{
-																		"grainlength" : 																		{
-																			"value" : 0.220472440944882
-																		}
-,
-																		"basefreq" : 																		{
-																			"value" : 261.625565410470642
-																		}
-,
-																		"panpos" : 																		{
-																			"value" : 0.52
-																		}
-,
-																		"starttime" : 																		{
-																			"value" : 0.275590551181102
-																		}
-,
-																		"buffchan" : 																		{
-																			"value" : 0.0
-																		}
-,
-																		"__sps" : 																		{
-																			"retrigger-logic" : 																			{
-
-																			}
-
-																		}
-
-																	}
-
-																}
-
-															}
-, 															{
-																"speed" : 																{
-																	"value" : 0.559055118110237
-																}
-,
-																"randomtrigger" : 																{
-																	"value" : 0.0
-																}
-,
-																"__sps" : 																{
-																	"granular" : 																	{
-																		"grainlength" : 																		{
-																			"value" : 0.220472440944882
-																		}
-,
-																		"basefreq" : 																		{
-																			"value" : 261.625565410470642
-																		}
-,
-																		"panpos" : 																		{
-																			"value" : 0.52
-																		}
-,
-																		"starttime" : 																		{
-																			"value" : 0.275590551181102
-																		}
-,
-																		"buffchan" : 																		{
-																			"value" : 0.0
-																		}
-,
-																		"__sps" : 																		{
-																			"retrigger-logic" : 																			{
-
-																			}
-
-																		}
-
-																	}
-
-																}
-
-															}
-, 															{
-																"speed" : 																{
-																	"value" : 0.559055118110237
-																}
-,
-																"randomtrigger" : 																{
-																	"value" : 0.0
-																}
-,
-																"__sps" : 																{
-																	"granular" : 																	{
-																		"grainlength" : 																		{
-																			"value" : 0.220472440944882
-																		}
-,
-																		"basefreq" : 																		{
-																			"value" : 261.625565410470642
-																		}
-,
-																		"panpos" : 																		{
-																			"value" : 0.52
-																		}
-,
-																		"starttime" : 																		{
-																			"value" : 0.275590551181102
-																		}
-,
-																		"buffchan" : 																		{
-																			"value" : 0.0
-																		}
-,
-																		"__sps" : 																		{
-																			"retrigger-logic" : 																			{
-
-																			}
-
-																		}
-
-																	}
-
-																}
-
-															}
-, 															{
-																"speed" : 																{
-																	"value" : 0.559055118110237
-																}
-,
-																"randomtrigger" : 																{
-																	"value" : 0.0
-																}
-,
-																"__sps" : 																{
-																	"granular" : 																	{
-																		"grainlength" : 																		{
-																			"value" : 0.220472440944882
-																		}
-,
-																		"basefreq" : 																		{
-																			"value" : 261.625565410470642
-																		}
-,
-																		"panpos" : 																		{
-																			"value" : 0.52
-																		}
-,
-																		"starttime" : 																		{
-																			"value" : 0.275590551181102
-																		}
-,
-																		"buffchan" : 																		{
-																			"value" : 0.0
-																		}
-,
-																		"__sps" : 																		{
-																			"retrigger-logic" : 																			{
-
-																			}
-
-																		}
-
-																	}
-
-																}
-
-															}
-, 															{
-																"speed" : 																{
-																	"value" : 0.559055118110237
-																}
-,
-																"randomtrigger" : 																{
-																	"value" : 0.0
-																}
-,
-																"__sps" : 																{
-																	"granular" : 																	{
-																		"grainlength" : 																		{
-																			"value" : 0.220472440944882
-																		}
-,
-																		"basefreq" : 																		{
-																			"value" : 261.625565410470642
-																		}
-,
-																		"panpos" : 																		{
-																			"value" : 0.52
-																		}
-,
-																		"starttime" : 																		{
-																			"value" : 0.275590551181102
-																		}
-,
-																		"buffchan" : 																		{
-																			"value" : 0.0
-																		}
-,
-																		"__sps" : 																		{
-																			"retrigger-logic" : 																			{
-
-																			}
-
-																		}
-
-																	}
-
-																}
-
-															}
- ]
 													}
 
 												}
@@ -4248,7 +1506,7 @@
 
 					}
 ,
-					"text" : "rnbo~ grains @polyphony 4",
+					"text" : "rnbo~ grains @polyphony 0",
 					"varname" : "rnbo~"
 				}
 
@@ -4277,13 +1535,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-14", 0 ],
-					"source" : [ "obj-12", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-93", 1 ],
 					"source" : [ "obj-13", 0 ]
 				}
@@ -4292,15 +1543,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-4", 0 ],
-					"order" : 1,
-					"source" : [ "obj-14", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-43", 0 ],
-					"order" : 0,
 					"source" : [ "obj-14", 0 ]
 				}
 
@@ -4372,22 +1614,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-4", 0 ],
-					"order" : 1,
-					"source" : [ "obj-23", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-41", 0 ],
-					"order" : 0,
-					"source" : [ "obj-23", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-27", 0 ],
 					"source" : [ "obj-24", 0 ]
 				}
@@ -4409,20 +1635,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-23", 0 ],
-					"source" : [ "obj-28", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-28", 0 ],
-					"source" : [ "obj-29", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-15", 0 ],
 					"source" : [ "obj-30", 1 ]
 				}
@@ -4430,47 +1642,8 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-12", 0 ],
-					"source" : [ "obj-32", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-37", 0 ],
 					"source" : [ "obj-33", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-29", 0 ],
-					"order" : 2,
-					"source" : [ "obj-35", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-32", 0 ],
-					"order" : 1,
-					"source" : [ "obj-35", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-45", 0 ],
-					"order" : 0,
-					"source" : [ "obj-35", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-12", 0 ],
-					"midpoints" : [ 583.0, 285.0, 754.0, 285.0, 754.0, 135.0, 692.5, 135.0 ],
-					"source" : [ "obj-36", 0 ]
 				}
 
 			}
@@ -4497,39 +1670,8 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-36", 0 ],
-					"source" : [ "obj-41", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-7", 0 ],
 					"source" : [ "obj-42", 1 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-23", 0 ],
-					"midpoints" : [ 681.5, 284.0, 559.0, 284.0, 559.0, 135.0, 593.5, 135.0 ],
-					"source" : [ "obj-43", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-36", 0 ],
-					"order" : 1,
-					"source" : [ "obj-45", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-43", 0 ],
-					"order" : 0,
-					"source" : [ "obj-45", 0 ]
 				}
 
 			}
@@ -4670,14 +1812,12 @@
  ],
 		"parameters" : 		{
 			"obj-1" : [ "live.text[2]", "live.text[2]", 0 ],
-			"obj-12" : [ "basenote", "Base", 0 ],
 			"obj-13" : [ "env_decay", "decay", 0 ],
+			"obj-14" : [ "tune[3]", "tune", 0 ],
 			"obj-17" : [ "env_release", "release", 0 ],
 			"obj-18" : [ "env_attack", "attack", 0 ],
 			"obj-2" : [ "rnbo~", "rnbo~", 0 ],
-			"obj-23" : [ "basefreq", "Base", 0 ],
 			"obj-33" : [ "spread[1]", "Spread", 0 ],
-			"obj-35" : [ "live.text", "live.text", 0 ],
 			"obj-42" : [ "pan", "Pan", 0 ],
 			"obj-46" : [ "startpos", "Start", 0 ],
 			"obj-47" : [ "grainsize", "Grain size", 0 ],
